@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="image/favicon2.png" type="image/x-icon">
+    <!-- JavaScript -->
+   
+    
+    <title>Lukas | Dev </title>
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <nav class="nav">
+
+            <div class="container-header borderBottom">
+
+                <div class="menu flex">
+
+                    <i class="bi bi-list menuHamburguer"></i>
+                    <div class="logo">Lukas <Span class="green">Dev_</Span></div>
+
+                </div>
+
+
+                <div class="navDesktop menuWeb">
+
+                    <ul class="listaWeb">
+                        <li class="item"><a href="#home" class="item"><span>_</span>Home</a></li>
+                        <li class="item"><a href="#about" class="item" data-i18n="header.about"><span>_</span>Sobre</a></li>
+                        <li class="item"><a href="#projects" class="item" data-i18n="header.projects"><span>_</span>Projetos</a></li>
+                        <li class="item"><a href="#contact" class="item" data-i18n="header.contact"><span>_</span>Contato</a></li> 
+                    </ul>
+
+                </div>
+
+
+                <div class="seletores flex">
+
+                    <div class="seletorTema">
+
+                        <i id="tema-icon" class="bi bi-sun" onclick="mudarTema()"></i>
+
+                    </div>
+
+
+                    <div class="seletorIdioma">
+                        
+                        <button class="menuIdioma" id="btnIdiomas"><span class="idiomaAtivo">Pt</span><i class="fa-solid fa-angle-down iconSeta"></i></button>
+
+                        <div class="menuIdiomas" id="listaIdiomas">
+                        
+                            <ul class="optionIdiomas" id="optionIdiomas">
+                                <li class="selecionado"  data-lang="Pt">Pt</li>
+                                <li class="selecionado" data-lang="En">En</li>
+                                <li class="selecionado" data-lang="Es">Es</li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+           
+        </nav>
+
+        <div class="menuMobile flex borderBottom2" id="esconder">
+
+                <ul class="listaWeb flex">
+                    <li><a href="#home" class="item"><span>_</span>Home</a></li>
+                    <li><a href="#about" class="item" data-i18n="header.about"><span>_</span>Sobre</a></li>
+                    <li><a href="#projects" class="item" data-i18n="header.projects"><span>_</span>Projetos</a></li>
+                    <li><a href="#contact" class="item" data-i18n="header.contact"><span>_</span>Contato</a></li>
+                </ul>
+
+            </div> 
+
+
+    </header>
+
+    <main>
+
+        <section class="home" id="home">
+
+            <div class="container">
+
+                <div class="conteudoPrincipal">
+
+                    
+
+                </div>
+
+                <div class="terminal">
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+
+       
+        </section>
+
+        <section class="projections" id="projects">
+
+
+        </section>
+
+        <section class="contact" id="contact">
+
+        </section>
+
+    </main>
+
+    <script src="script/language.js" defer></script>
+    <script src="script/script.js" defer></script>
+    
+</body>
+
+</html>

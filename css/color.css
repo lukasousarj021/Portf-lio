@@ -1,0 +1,26 @@
+:root {
+ 
+ --bgNav: #000;
+
+ --spanGreen: #00ff66;
+
+ --txtPrincipal: #ffffff;
+
+ --border: #3d3d3d;
+
+ --bgIdiomas: #303030;
+ --hoverIdiomas: #000;
+
+}
+
+
+
+.light{
+
+ --bgNav: #fff;
+
+ --txtPrincipal: #000000;
+ --txtSecundario: #242424;
+ --bgIdiomas: #dfdfdf;
+ 
+}
