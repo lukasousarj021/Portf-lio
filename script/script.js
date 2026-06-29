@@ -135,24 +135,25 @@ function fecharOutros(atual){
 
 }
 
-
+    
 sections.forEach(section => {
 
     const titulo = section.querySelector(".hoverGreen");
-
+    const icone = section.querySelector(".iconeSeta i");
 
     titulo.addEventListener("click", () => {
 
-
-        if(window.innerWidth <= 1000){
-
-            
+        if (window.innerWidth <= 100000) {
 
             section.classList.toggle("open");
 
-        }
+            icone.classList.toggle("bi-chevron-up");
+            icone.classList.toggle("bi-chevron-down");
 
+        }
 
     });
 
 });
+
+

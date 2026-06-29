@@ -287,10 +287,9 @@
 
 
 
-@media(max-width:900px){
 
 
-    /* esconde só o conteúdo */
+
 
     .explorer:not(.open) .arquivos,
     .containerAsideLinks:not(.open) .navLinks {
@@ -308,6 +307,3 @@
         display:block;
 
     }
-
-
-}
