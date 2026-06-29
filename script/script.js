@@ -144,7 +144,7 @@ sections.forEach(section => {
     titulo.addEventListener("click", () => {
 
 
-        if(window.innerWidth <= 900){
+        if(window.innerWidth <= 1000){
 
             
 
