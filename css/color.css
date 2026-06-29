@@ -1,6 +1,40 @@
 :root {
  
+/* CORES DE FUNDO PRINCIPAIS */
+
+--preto: #181918;
+--preto3: #161616;
+--cinza: #706f6f;
+--cinzaEscuro: #3f3f3f;
+--cinzaClaro: #d2cfcf;
+--cinzaEscuro2: #2c2c2c;
+--cinzaMedio: #6a6a6b;
+--cinzaEscuro3: #2b2b2c;
+
+/* CORES DE TEXTO PRINCIPAIS */
+
+--txtBranco: #fff;
+--txtPreto: #fffefe;
+
+
+
+
+/* CORES POR SEÇÃO */
+
+
+
+/*  border */
+
+--borderGreen: #00ff66;
+--border2: #636262;
+
+
+
  --bgNav: #000;
+
+ --bgAside: #000;
+ --iconesAside: #686868;
+ --hoverAsideIcone: #b6b5b5;
 
  --spanGreen: #00ff66;
 
@@ -22,5 +56,28 @@
  --txtPrincipal: #000000;
  --txtSecundario: #242424;
  --bgIdiomas: #dfdfdf;
+
+
+ --bgAside: #ecebeb;
+ --iconesAside: #919090;
+ --hoverAsideIcone: #3f3f3f;
+
+
+     /* fundos */
+    --preto: #f5f5f5;          
+    --preto3: #ffffff;        
+
+    /* cinzas */
+    --cinzaEscuro: #d0d0d0;    
+    --cinzaEscuro2: #e5e5e5;   
+    --cinzaEscuro3: #e2e2e2;   
+
+    --cinzaMedio: #777777;    
+    --cinza: #8a8a8a;         
+    --cinzaClaro: #222222;   
+
+    --txtPreto: #000;
  
 }
+
+

@@ -1,0 +1,313 @@
+.menuIcones {
+
+    visibility: hidden;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 100dvh;
+    width: 45px;
+
+    background-color: var(--bgAside);
+
+    z-index: 999999;
+    display: grid;
+    grid-template-rows: 60px 1fr 1fr;
+
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+
+        width: 25px;
+
+
+    }
+
+
+
+}
+
+.icones {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+
+    padding-top: 0.5rem;
+
+    font-size: 1.5rem;
+
+    color: var(--iconesAside);
+
+}
+
+
+.iconesInferiores {
+
+    justify-content: flex-end;
+
+    padding-bottom: 2rem;
+
+}
+
+.menuNavAside {
+
+    display: block;
+    
+
+}
+
+.containerAside {
+
+    position: fixed;
+    top: 3rem;
+    left: 0;
+
+    width: 14rem;
+    height: calc(100dvh - 3rem);
+
+    padding-left: 10px;
+
+    background-color: var(--preto);
+    color: var(--txtBranco);
+
+    display: flex;
+    flex-direction: column;
+
+     overflow-y: auto; /* aparece só quando precisar */
+    overflow-x: hidden;
+
+    
+}
+
+
+.explorer {
+
+    padding: 1rem 1rem;
+
+    color: var(--txtPreto);
+
+    .seta{
+
+        padding-left: 4.5rem;
+
+    }
+
+    .seta2{
+
+        margin-right: .5rem;
+
+    }
+
+
+    .arquivos {
+
+        color: var(--cinza);
+
+        padding-left: 1rem;
+        position: relative;
+
+        margin-right: 10px;
+        font-size: clamp(1rem, 1vw, 1.2rem);
+
+
+        
+    }
+
+    .arquivos p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 82%;
+        background: var(--border);
+
+    }
+
+    .arquivos p {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+    }
+
+  
+}
+
+.circulos {
+        margin-left: auto;
+        padding-right: 1rem;
+
+        color: var(--cinza);
+    }
+
+.containerAsideLinks {
+
+    padding-left: 1rem;
+
+}
+
+.navLinks {
+
+    p {
+
+        width: 11rem;
+        height: 1.8rem;
+
+        font-size: 0.9rem;
+
+        color: var(--txtPreto);
+
+        cursor: pointer;
+
+        padding: 0.2rem 1rem;
+
+        border-radius: 10px;
+        background-color: var(--cinzaEscuro3);
+        
+        border-left: 3px solid var(--border2);
+
+        &:hover {
+
+            border-left: 3px solid var(--borderGreen);
+            background: rgba(0, 255, 136, .05);
+
+            box-shadow:
+                0 0 8px rgba(0, 255, 136, .18),
+                inset 0 0 12px rgba(0, 255, 136, .04);
+
+            color: var(--spanGreen);
+        }
+
+
+    }
+
+
+    span {
+
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+
+    }
+}
+
+.caixaTxt{
+
+    width: 85%;
+
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.containerHelp{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-left: .5rem;
+    padding-top: .5rem;
+    
+
+    border: 2px solid var(--borderGreen);
+    border-radius: 8px;
+
+    &:hover{
+
+
+    color: #00ff66;
+
+    text-shadow:
+        0 0 5px #12f06b,
+        0 0 15px #19df68,
+        0 0 30px rgba(9, 228, 97, 0.8);
+
+    }
+}
+
+
+
+.espacamentoSetas{
+
+    padding-left: 4.5rem;
+
+}
+
+.espacamentoSetas2{
+
+    padding-left: 5.2rem;
+
+}
+
+
+
+
+
+
+@media (min-width: 1000px) {
+
+
+    .menuIcones {
+
+        visibility: visible;
+
+    }
+
+
+    .containerAside{
+
+        left: 45px;
+
+    }
+
+}
+
+
+@media(max-width:999px) {
+
+    .containerAside {
+        width: 14rem;
+        max-width: 14rem;
+    }
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    /* esconde só o conteúdo */
+
+    .explorer:not(.open) .arquivos,
+    .containerAsideLinks:not(.open) .navLinks {
+
+        display:none;
+
+    }
+
+
+    /* mantém os títulos aparecendo */
+
+    .explorer,
+    .containerAsideLinks {
+
+        display:block;
+
+    }
+
+
+}

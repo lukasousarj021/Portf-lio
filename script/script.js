@@ -25,6 +25,30 @@ function mudarTema() {
 
 }
 
+function abrirMennuLateral() {
+
+    const menuLateral = document.querySelector(".menuNavAside");
+    const menuHamburguer = document.getElementById("menuHamburguer");
+
+    if( menuLateral.style.display === "none"){
+
+        menuLateral.style.display = "block" ;
+
+        menuHamburguer.classList.replace("bi-list", "bi-x");
+        menuHamburguer.style.transform = "rotate(180deg)";
+
+
+    } else {
+
+        menuLateral.style.display = "none";
+        menuHamburguer.classList.replace("bi-x", "bi-list");
+        menuHamburguer.style.transform = "rotate(0deg)";
+
+    }
+
+
+}
+
 
 
 
@@ -88,3 +112,47 @@ idiomaSeleciondo.forEach(selecionado => {
         });
 
     });
+
+
+const explorer = document.querySelector(".explorer");
+const atalhos = document.querySelector(".atalhos.containerAsideLinks");
+const contato = document.querySelector(".contato");
+
+const sections = [explorer, atalhos, contato];
+
+
+function fecharOutros(atual){
+
+    sections.forEach(section => {
+
+        if(section !== atual){
+
+            section.classList.remove("open");
+
+        }
+
+    });
+
+}
+
+
+sections.forEach(section => {
+
+    const titulo = section.querySelector(".hoverGreen");
+
+
+    titulo.addEventListener("click", () => {
+
+
+        if(window.innerWidth <= 900){
+
+            
+
+            section.classList.toggle("open");
+
+        }
+
+
+    });
+
+});

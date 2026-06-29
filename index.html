@@ -2,20 +2,24 @@
 <html lang="pt-br">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="image/favicon2.png" type="image/x-icon">
     <!-- JavaScript -->
-   
-    
+
+
     <title>Lukas | Dev </title>
 
 </head>
@@ -30,7 +34,7 @@
 
                 <div class="menu flex">
 
-                    <i class="bi bi-list menuHamburguer"></i>
+                    <i class="bi bi-list menuHamburguer" id="menuHamburguer" style="cursor: pointer; transition: trasform 0.3s ease;" onclick="abrirMennuLateral()"></i>
                     <div class="logo">Lukas <Span class="green">Dev_</Span></div>
 
                 </div>
@@ -40,9 +44,12 @@
 
                     <ul class="listaWeb">
                         <li class="item"><a href="#home" class="item"><span>_</span>Home</a></li>
-                        <li class="item"><a href="#about" class="item" data-i18n="header.about"><span>_</span>Sobre</a></li>
-                        <li class="item"><a href="#projects" class="item" data-i18n="header.projects"><span>_</span>Projetos</a></li>
-                        <li class="item"><a href="#contact" class="item" data-i18n="header.contact"><span>_</span>Contato</a></li> 
+                        <li class="item"><a href="#about" class="item" data-i18n="header.about"><span>_</span>Sobre</a>
+                        </li>
+                        <li class="item"><a href="#projects" class="item"
+                                data-i18n="header.projects"><span>_</span>Projetos</a></li>
+                        <li class="item"><a href="#contact" class="item"
+                                data-i18n="header.contact"><span>_</span>Contato</a></li>
                     </ul>
 
                 </div>
@@ -58,17 +65,18 @@
 
 
                     <div class="seletorIdioma">
-                        
-                        <button class="menuIdioma" id="btnIdiomas"><span class="idiomaAtivo">Pt</span><i class="fa-solid fa-angle-down iconSeta"></i></button>
+
+                        <button class="menuIdioma" id="btnIdiomas"><span class="idiomaAtivo">Pt</span><i
+                                class="fa-solid fa-angle-down iconSeta"></i></button>
 
                         <div class="menuIdiomas" id="listaIdiomas">
-                        
+
                             <ul class="optionIdiomas" id="optionIdiomas">
-                                <li class="selecionado"  data-lang="Pt">Pt</li>
+                                <li class="selecionado" data-lang="Pt">Pt</li>
                                 <li class="selecionado" data-lang="En">En</li>
                                 <li class="selecionado" data-lang="Es">Es</li>
                             </ul>
-                        
+
                         </div>
                     </div>
 
@@ -76,23 +84,159 @@
 
             </div>
 
-            
-           
+
+
         </nav>
 
         <div class="menuMobile flex borderBottom2" id="esconder">
 
-                <ul class="listaWeb flex">
-                    <li><a href="#home" class="item"><span>_</span>Home</a></li>
-                    <li><a href="#about" class="item" data-i18n="header.about"><span>_</span>Sobre</a></li>
-                    <li><a href="#projects" class="item" data-i18n="header.projects"><span>_</span>Projetos</a></li>
-                    <li><a href="#contact" class="item" data-i18n="header.contact"><span>_</span>Contato</a></li>
-                </ul>
+            <ul class="listaWeb flex">
+                <li><a href="#home" class="item"><span>_</span>Home</a></li>
+                <li><a href="#about" class="item" data-i18n="header.about"><span>_</span>Sobre</a></li>
+                <li><a href="#projects" class="item" data-i18n="header.projects"><span>_</span>Projetos</a></li>
+                <li><a href="#contact" class="item" data-i18n="header.contact"><span>_</span>Contato</a></li>
+            </ul>
 
-            </div> 
+        </div>
 
 
     </header>
+
+    <aside>
+
+        
+        <div class="menuIcones">
+
+
+            <div class="logo">
+
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg">
+
+
+            </div>
+        
+            <div class="iconesSuperiores icones">
+
+              
+                <i class="bi bi-file-earmark iconPointer"></i>
+                
+                <i class="bi bi-search"></i>
+
+                <i class="fa-solid fa-code-branch"></i>
+
+                <i class="fa-solid fa-bug"></i>
+
+                <i class="bi bi-grid"></i>
+
+
+            </div>
+
+         
+            <div class="iconesInferiores icones">
+
+                <i class="fa-solid fa-circle-user iconPointer"> <a href="#" onclick="pastaSecreta()"></a></i>
+
+                <i class="bi bi-gear"></i>
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="menuNavAside">
+
+            <div class="containerAside">
+
+                <div class="explorer">
+
+                    <p>Explorer <span class="seta"><i class="bi bi-chevron-up"></i></span></p>
+
+                    <p class="portfolio hoverGreen"><span class="seta2"><i class="bi bi-chevron-up"></i></span> Portfolio</p>
+
+                    <div class="containerAsideNav arquivos borderBottom">
+
+                        <p><span><i class="bi bi-folder" "></i></span> Assets <span class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span></p>
+                        <p><span><i class="fa-brands fa-html5" style="color: #bd4f32"></i></span> index.html <span class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span> </p>
+                        <p><span><i class="fa-brands fa-css3-alt" style="color: #0b8ce8;"></i></span> style.css <span class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span></p>
+                        <p><span><i class="fa-brands fa-js" style="color: #fbe02a;"></i></span> script.js <span class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span></p>
+
+
+                    </div>
+
+
+
+                </div>
+                
+                
+                <div class="containerAsideLinks atalhos">
+
+                    <div class="txt">
+
+                        <p class="hoverGreen" data-i18n="aside.shortcuts">atalhos  <span class="espacamentoSetas2"><i class="bi bi-chevron-up"></i></span></p>
+
+                    </div>
+
+                    <div class=" navLinks atalhos">
+                        
+
+                        <p><span><i class="bi bi-house"></i></span> _Home</p>
+                        <p><span><i class="bi bi-person-circle"></i></span> <span data-i18n="header.about">_Sobre</span></p>
+                        <p><span><i class="bi bi-folder"></i></span> <span data-i18n="header.projects">_Projetos</span></p>
+                        <p><span><i class="bi bi-envelope"></i></span> <span data-i18n="header.contact">_Contato</span></p>
+
+
+                    </div>
+
+                </div>
+                
+
+                <div class="containerAsideLinks contato">
+
+                    <div class="txt">
+
+                        <p class="hoverGreen" data-i18n="header.contact">Contatos  <span class="espacamentoSetas"><i class="bi bi-chevron-up"></i></span></p>
+
+                    </div>
+
+                    <div class="navLinks">
+
+                        <p><span><i class="bi bi-github"></i></span> _Github</p>
+                        <p><span><i class="bi bi-linkedin"></i></span> _Linkedin</p>
+                        <p><span><i class="bi bi-envelope-fill"></i></span> _Email</p>
+                        
+
+
+                    </div>
+
+                </div>
+                
+
+                <div class="caixaTxt">
+
+                    <div class="containerHelp">
+
+                        <p class="green" data-i18n="aside.esterEgg">> Digite 'help' no terminal</p>
+                        <span class="circulos">
+                            <i class="fa-solid fa-circle fa-2xs"></i>
+                            <i class="fa-solid fa-circle fa-2xs"></i>
+                            <i class="fa-solid fa-circle fa-2xs" style="color: var(--spanGreen);"></i>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </aside>
+
 
     <main>
 
@@ -102,7 +246,7 @@
 
                 <div class="conteudoPrincipal">
 
-                    
+
 
                 </div>
 
@@ -117,7 +261,7 @@
 
         <section class="about" id="about">
 
-       
+
         </section>
 
         <section class="projections" id="projects">
@@ -133,7 +277,7 @@
 
     <script src="script/language.js" defer></script>
     <script src="script/script.js" defer></script>
-    
+
 </body>
 
 </html>

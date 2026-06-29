@@ -51,18 +51,12 @@ header {
     color: var(--txtPrincipal);
    
     font-weight: bold;
-
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    
     .menuHamburguer{
 
-       font-size: clamp(1.2rem, 2vw, 1.5rem);
-        
-
-    }
-
-    .logo{
-
-         font-size: clamp(1.2rem, 3vw, 2rem);
-
+        cursor: pointer; 
+        transition: trasform 0.3s ease  ;
     }
 
 }
@@ -218,7 +212,14 @@ header {
 
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
+
+    .menu{
+
+        padding-left: 2rem;
+
+    }
+
 
     .menuMobile .flex{
 
@@ -236,6 +237,13 @@ header {
             align-items: center;
             justify-content: center;
             gap: 2rem;
+
+            ul,li{
+
+                margin: 0;
+                padding: 0;
+
+            }
 
             a{
 
