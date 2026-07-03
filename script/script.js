@@ -25,6 +25,8 @@ function mudarTema() {
 
 }
 
+
+
 function abrirMennuLateral() {
 
     const menuLateral = document.querySelector(".menuNavAside");

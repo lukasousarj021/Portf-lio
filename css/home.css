@@ -1,0 +1,416 @@
+.home {
+
+    width: 100dvw;
+    height: calc(100dvh - 5rem);
+
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.containerMain {
+
+    width: 90%;
+    height: 95%;
+
+    padding-top: 0.5rem;
+
+    background-color: var(--preto);
+
+    line-height: 1.5rem;
+
+    color: var(--txtBranco);
+
+}
+
+
+.txtAbout {
+
+    width: 8rem;
+
+    font-size: .9rem;
+
+    padding: .2rem .6rem;
+
+    color: var(--txtGreen);
+
+    background-color: var(--cinzaEscuro3);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+
+
+
+}
+
+.saudacao {
+
+    font-size: 1.8rem;
+    color: var(--txtCinza);
+
+    padding-top: .5rem;
+
+}
+
+
+.apresentacao {
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    color: var(--txtBranco);
+
+    
+
+}
+
+.txtPrincipal {
+
+    position: relative;
+
+    height: 8rem;
+
+    padding-top: 2rem;
+    padding-left: 1rem;
+
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+
+    
+
+    font-size: 1.2rem;
+
+
+
+
+}
+
+.txtPrincipal::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 0.1rem;
+    height: 5rem;
+
+    left: -1rem;
+    top: 10px;
+
+    background-color: var(--greenClaro);
+
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+
+.constStack {
+
+    font-size: 0.9rem;
+    font-weight: 300;
+
+    margin-top: 1rem;
+
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background-color: var(--fundoStack);
+
+    padding: .1rem .5rem;
+
+    .const {
+
+        color: var(--txtGreen);
+
+    }
+
+    .txtStack {
+
+        color: var(--txtAzul);
+
+    }
+
+    .stacks {
+
+        color: var(--txtLaranja);
+
+    }
+
+}
+
+
+
+.button {
+
+    width: 100%;
+
+    margin: auto;
+
+    padding-top: 1.5rem;
+
+    
+
+
+}
+
+.projetos {
+
+    width: 45%;
+
+    border: 1px solid var(--borderGreen);
+    border-radius: 8px;
+
+    padding: .3rem 0;
+
+    margin-right: 1rem;
+
+    background-color: var(--green);
+
+    transition: all 0.3s ease-in-out;
+
+     span {
+
+        padding-left: .5rem;
+
+    }
+
+    &:hover {
+
+        background-color: transparent;
+        color: var(--green);
+
+        transform: translateY(-10px);
+
+        box-shadow: 0px 2px 10px var(--green);
+
+    }
+}
+
+
+
+.sobre {
+
+    width: 45%;
+
+    color: var(--txtGreen);
+
+    border: 1px solid var(--borderGreen);
+    border-radius: 8px;
+
+    padding: .3rem 0;
+
+    background-color: transparent;
+
+    transition: all 0.3s ease-in-out;
+
+    span {
+
+        padding-left: .5rem;
+
+    }
+
+    &:hover {
+
+        background-color: var(--green);
+        color: var(--txtEscuro);
+
+         transform: translateY(-10px);
+
+        box-shadow: 0px 10px 10px var(--cinzaEscuro3);
+
+    }
+
+}
+
+
+.redes {
+
+    width: 90%;
+
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    font-size: 1.5rem;
+
+    a {
+
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 3rem;
+        height: 3rem;
+
+        color: var(--txtBranco);
+
+        background-color: var(--cinzaEscuro3);
+
+        border-radius: 50%;
+    }
+
+
+}
+
+
+
+
+
+.github:hover {
+
+    width: 3rem;
+    height: 3rem;
+
+    color: var(--txtCinzaEscuro);
+
+    background-color: var(--cinzaMedio);
+
+
+    &::after {
+
+        content: "GitHub";
+
+        position: absolute;
+
+
+        color: var(--txtBranco);
+        border-radius: 8px;
+
+        background-color: var(--cinzaEscuro3);
+        padding: .5rem 1rem;
+
+        top: -50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        font-size: .8rem;
+        font-weight: 600;
+
+        color: var(--txtBranco);
+
+    }
+
+}
+
+.linkedin:hover {
+
+    width: 3rem;
+    height: 3rem;
+
+    color: var(--txtBranco);
+
+    background-color: var(--linkedIn);
+
+
+    
+    &::after {
+
+        content: "LinkedIn";
+
+        position: absolute;
+
+
+        color: var(--txtBranco);
+        border-radius: 8px;
+
+        background-color: var(--cinzaEscuro3);
+        padding: .5rem 1rem;
+
+        top: -50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        font-size: .8rem;
+        font-weight: 600;
+
+        color: var(--txtBranco);
+
+    }
+
+}
+
+.email:hover {
+
+    width: 3rem;
+    height: 3rem;
+
+    color: var(--txtCinzaEscuro);
+    background-color: var(--email);
+
+    
+    &::after {
+
+        content: "Email";
+
+        position: absolute;
+
+
+        color: var(--txtBranco);
+        border-radius: 8px;
+
+        background-color: var(--cinzaEscuro3);
+        padding: .5rem 1rem;
+
+        top: -50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        font-size: .8rem;
+        font-weight: 600;
+
+        color: var(--txtBranco);
+
+    }
+
+}
+
+.curriculo:hover {
+
+    width: 3rem;
+    height: 3rem;
+
+    color: var(--txtCinzaEscuro);
+
+    background-color: var(--cinzaMedio);
+
+    
+    &::after {
+
+        content: "Currículo";
+
+        position: absolute;
+
+
+        color: var(--txtBranco);
+        border-radius: 8px;
+
+        background-color: var(--cinzaEscuro3);
+        padding: .5rem 1rem;
+
+        top: -50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        font-size: .8rem;
+        font-weight: 600;
+
+        color: var(--txtBranco);
+
+    }
+
+}

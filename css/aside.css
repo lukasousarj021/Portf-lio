@@ -2,7 +2,7 @@
 
     visibility: hidden;
 
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
 
@@ -61,7 +61,7 @@
 
 .menuNavAside {
 
-    display: block;
+    display: none;
     
 
 }
@@ -77,7 +77,7 @@
 
     padding-left: 10px;
 
-    background-color: var(--preto);
+    background-color: var(--menuAside);
     color: var(--txtBranco);
 
     display: flex;
@@ -117,7 +117,7 @@
         position: relative;
 
         margin-right: 10px;
-        font-size: clamp(1rem, 1vw, 1.2rem);
+        font-size: clamp(1rem, 0.5vw, 1.2rem);
 
 
         
@@ -142,12 +142,25 @@
 
     }
 
+      .readme{
+
+        cursor: pointer;
+
+        font-size: 0.9rem;
+
+        &:hover{
+
+            color: var(--hoverClaro);
+
+        }
+
+    }
+
   
 }
 
 .circulos {
         margin-left: auto;
-        padding-right: 1rem;
 
         color: var(--cinza);
     }
@@ -192,6 +205,7 @@
 
 
     }
+
 
 
     span {

@@ -34,7 +34,8 @@
 
                 <div class="menu flex">
 
-                    <i class="bi bi-list menuHamburguer" id="menuHamburguer" style="cursor: pointer; transition: trasform 0.3s ease;" onclick="abrirMennuLateral()"></i>
+                    <i class="bi bi-list menuHamburguer" id="menuHamburguer"
+                        style="cursor: pointer; transition: trasform 0.3s ease;" onclick="abrirMennuLateral()"></i>
                     <div class="logo">Lukas <Span class="green">Dev_</Span></div>
 
                 </div>
@@ -91,10 +92,10 @@
         <div class="menuMobile flex borderBottom2" id="esconder">
 
             <ul class="listaWeb flex">
-                <li><a href="#home" class="item"><span>_</span>Home</a></li>
-                <li><a href="#about" class="item" data-i18n="header.about"><span>_</span>Sobre</a></li>
-                <li><a href="#projects" class="item" data-i18n="header.projects"><span>_</span>Projetos</a></li>
-                <li><a href="#contact" class="item" data-i18n="header.contact"><span>_</span>Contato</a></li>
+                <li><a href="#home" class="item"><span><i class="bi bi-house" style="padding-right: .2rem;"></i></span>Home</a></li>
+                <li><a href="#about" class="item"><span><i class="bi bi-person" style="padding-right: .3rem;"></i></span><span data-i18n="header.about"></span></a></li>
+                <li><a href="#projects" class="item"><span><i class="bi bi-briefcase" style="padding-right: .3rem;"></i></span><span data-i18n="header.projects"></span></a></li>
+                <li><a href="#contact" class="item"><span><i class="bi bi-envelope" style="padding-right: .3rem;"></i></span><span data-i18n="header.contact"></span></a></li>
             </ul>
 
         </div>
@@ -104,22 +105,22 @@
 
     <aside>
 
-        
+
         <div class="menuIcones">
 
 
             <div class="logo">
 
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg">
 
 
             </div>
-        
+
             <div class="iconesSuperiores icones">
 
-              
+
                 <i class="bi bi-file-earmark iconPointer"></i>
-                
+
                 <i class="bi bi-search"></i>
 
                 <i class="fa-solid fa-code-branch"></i>
@@ -131,7 +132,7 @@
 
             </div>
 
-         
+
             <div class="iconesInferiores icones">
 
                 <i class="fa-solid fa-circle-user iconPointer"> <a href="#" onclick="pastaSecreta()"></a></i>
@@ -153,50 +154,62 @@
 
                     <p class="teste">Explorer <span class="seta"><i class="bi bi-chevron-up"></i></span></p>
 
-                    <p class="portfolio hoverGreen"><span class="seta2 iconeSeta"><i class="bi bi-chevron-up"></i></span> Portfolio</p>
+                    <p class="portfolio hoverGreen"><span class="seta2 iconeSeta"><i
+                                class="bi bi-chevron-up"></i></span> Portfolio</p>
 
                     <div class="containerAsideNav arquivos borderBottom">
 
-                        <p><span><i class="bi bi-folder" "></i></span> Assets <span class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span></p>
-                        <p><span><i class="fa-brands fa-html5" style="color: #bd4f32"></i></span> index.html <span class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span> </p>
-                        <p><span><i class="fa-brands fa-css3-alt" style="color: #0b8ce8;"></i></span> style.css <span class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span></p>
-                        <p><span><i class="fa-brands fa-js" style="color: #fbe02a;"></i></span> script.js <span class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span></p>
-
+                        <p><span><i class="bi bi-folder" "></i></span> Assets <span class=" circulos"><iclass="fa-solid
+                                        fa-circle fa-2xs"></i></span></p>
+                        <p><span><i class="fa-brands fa-html5" style="color: #bd4f32"></i></span> index.html <span
+                                class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span> </p>
+                        <p><span><i class="fa-brands fa-css3-alt" style="color: #0b8ce8;"></i></span> style.css <span
+                                class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span></p>
+                        <p><span><i class="fa-brands fa-js" style="color: #fbe02a;"></i></span> script.js <span
+                                class="circulos"><i class="fa-solid fa-circle fa-2xs"></i></span></p>
+                        <p class="readme"><span><i class="fa-solid fa-circle-exclamation fa-fade"
+                                    style="color: #0b8ce8;"></i></span> README.md <span class="circulos"><i
+                                    class="fa-solid fa-circle fa-2xs"></i></span></p>
 
                     </div>
 
 
 
                 </div>
-                
-                
+
+
                 <div class="containerAsideLinks atalhos">
 
                     <div class="txt">
 
-                        <p class="hoverGreen"><span  data-i18n="aside.shortcuts">atalhos</span><span class="espacamentoSetas2 iconeSeta"><i class="bi bi-chevron-up"></i></span></p>
+                        <p class="hoverGreen"><span data-i18n="aside.shortcuts">atalhos</span><span
+                                class="espacamentoSetas2 iconeSeta"><i class="bi bi-chevron-up"></i></span></p>
 
                     </div>
 
                     <div class=" navLinks atalhos">
-                        
+
 
                         <p><span><i class="bi bi-house"></i></span> _Home</p>
-                        <p><span><i class="bi bi-person-circle"></i></span> <span data-i18n="header.about">_Sobre</span></p>
-                        <p><span><i class="bi bi-folder"></i></span> <span data-i18n="header.projects">_Projetos</span></p>
-                        <p><span><i class="bi bi-envelope"></i></span> <span data-i18n="header.contact">_Contato</span></p>
+                        <p><span><i class="bi bi-person-circle"></i></span> <span data-i18n="header.about">_Sobre</span>
+                        </p>
+                        <p><span><i class="bi bi-folder"></i></span> <span data-i18n="header.projects">_Projetos</span>
+                        </p>
+                        <p><span><i class="bi bi-envelope"></i></span> <span data-i18n="header.contact">_Contato</span>
+                        </p>
 
 
                     </div>
 
                 </div>
-                
+
 
                 <div class="containerAsideLinks contato">
 
                     <div class="txt">
 
-                        <p class="hoverGreen"><span data-i18n="header.contact">Contatos</span><span class="espacamentoSetas iconeSeta"><i class="bi bi-chevron-up"></i></span></p>
+                        <p class="hoverGreen"><span data-i18n="header.contact">Contatos</span><span
+                                class="espacamentoSetas iconeSeta"><i class="bi bi-chevron-up"></i></span></p>
 
                     </div>
 
@@ -205,13 +218,13 @@
                         <p><span><i class="bi bi-github"></i></span> _Github</p>
                         <p><span><i class="bi bi-linkedin"></i></span> _Linkedin</p>
                         <p><span><i class="bi bi-envelope-fill"></i></span> _Email</p>
-                        
+
 
 
                     </div>
 
                 </div>
-                
+
 
                 <div class="caixaTxt">
 
@@ -242,18 +255,55 @@
 
         <section class="home" id="home">
 
-            <div class="container">
+            <div class="containerMain">
 
-                <div class="conteudoPrincipal">
+                <div class="txtHome">
+
+                    <p class="txtAbout"><i class="fa-solid fa-circle fa-2xs"></i> // Sobre mim</p>
+
+                    <p class="saudacao">Olá, eu sou</p>
+
+                    <p class="apresentacao">Lukas <span class="green">Dev<span class="piscar">_</span></span></p>
+
+                    <p class="txtPrincipal">Desenvolvedo Full Stack focado em criar aplicações <span class="green">modernas, rápidas</span> e <span class="green">escaláveis.</span></p>
+
+                </div>
+                
+                <div class="constStack">
+                    
+                    <div class="iconStack flex" style="justify-content: space-between;";">
+
+                        <p><i class="fa-solid fa-circle fa-2xs" style="color: #fd3b06;"></i> <i class="fa-solid fa-circle fa-2xs" style="color: rgb(241, 177, 1);"></i> <i class="fa-solid fa-circle fa-2xs" style="color: rgb(1, 250, 1);"></i></p>
+
+                        <p><i class="fa-regular fa-copy" style="color: var(--cinza); font-size: 1rem;"></i></p>
 
 
+                    </div>
+                    
+                    <p><span class="const">> const</span> <span class="txtStack">Stack</span> = <span class="stacks">[ "HTML", "CSS", "JS", "REACT", "NODE.JS" ]</span></p>
 
                 </div>
 
-                <div class="terminal">
+                <div class="button">
 
+                    <a href="#projects" ><button class="projetos"> Ver Projetos <span><i class="bi bi-arrow-right"></i></span></button></a>
+
+                    <a href="#about" ><button class="sobre"> Sobre mim <span><i class="bi bi-person"></i></span></button></a>
 
                 </div>
+
+                <div class="redes flex">
+                    
+                    <a href="http://" class="github"><span ><i class="bi bi-github"></i></span></a>
+
+                    <a href="http://" class="linkedin"><span><i class="bi bi-linkedin"></i></span></a>
+
+                    <a href="http://" class="email"><span><i class="bi bi-envelope-fill"></i></span></a>
+
+                    <a href="" class="curriculo"><span><i class="bi bi-download"></i></span></a>
+
+                </div>
+
 
             </div>
 
