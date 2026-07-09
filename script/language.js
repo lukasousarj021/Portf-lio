@@ -6,40 +6,45 @@ const teste = document.getElementById("teste")
 
 
 btnIdiomas.addEventListener("click", () => {
-     listaIdioma.classList.toggle("activeIdiomas");
+    listaIdioma.classList.toggle("activeIdiomas");
 });
 
 
 
 document.addEventListener("click", (e) => {
 
-    if (!listaIdioma.contains(e.target) &&!btnIdiomas.contains(e.target)) 
-    {
-    
+    if (!listaIdioma.contains(e.target) && !btnIdiomas.contains(e.target)) {
+
         listaIdioma.classList.remove("activeIdiomas");
-    
+
     }
 
 });
 
 
+let traducoesAtuais = {};
 
 async function carregarIdioma(lang) {
 
-    
+
     conteudo.classList.add("blur-out");
-         
+
 
     setTimeout(async () => {
         try {
             const response = await fetch(`lang/${lang}.json`);
             const traducoes = await response.json();
 
+            traducoesAtuais = traducoes;
+
             aplicarTraducoes(traducoes);
 
+            if (typeof atualizarTerminal === "function") {
+                atualizarTerminal();
+            }
             localStorage.setItem("idioma", lang);
             document.querySelector(".idiomaAtivo").textContent = lang.toUpperCase();
-                
+
 
         } catch (erro) {
             console.error("Erro:", erro);
@@ -57,15 +62,15 @@ async function carregarIdioma(lang) {
 }
 
 function formatText(text) {
-  return text.replace(
-    /\[green\](.*?)\[\/green\]/g,
-    '<span class="destaque blue">$1</span>'
-    
-  )
-  .replace(
-      /\[linguagens\](.*?)\[\/linguagens\]/g,
-      '<span class="linguagens">$1</span>'
+    return text.replace(
+        /\[green\](.*?)\[\/green\]/g,
+        '<span class="green">$1</span>'
+
     )
+        .replace(
+            /\[linguagens\](.*?)\[\/linguagens\]/g,
+            '<span class="green">$1</span>'
+        )
 }
 
 
@@ -89,7 +94,7 @@ function aplicarTraducoes(traducoes) {
         }
 
         if (texto) {
-           el.innerHTML = formatText(texto);
+            el.innerHTML = formatText(texto);
         }
     });
 }
@@ -97,13 +102,13 @@ function aplicarTraducoes(traducoes) {
 // 🔥 clique no idioma (CORRIGIDO)
 lista.addEventListener("click", (e) => {
     const li = e.target.closest("li");
-    
+
     if (li) {
         const lang = li.dataset.lang;
         carregarIdioma(lang);
 
-  
-       
+
+
     }
 });
 

@@ -1,3 +1,9 @@
+aside{
+ 
+
+}
+
+
 .menuIcones {
 
     visibility: hidden;
@@ -14,6 +20,8 @@
     z-index: 999999;
     display: grid;
     grid-template-rows: 60px 1fr 1fr;
+
+    z-index: 999999;
 
 }
 
@@ -85,7 +93,8 @@
 
      overflow-y: auto; /* aparece só quando precisar */
     overflow-x: hidden;
-
+    
+    z-index: 999999;
     
 }
 

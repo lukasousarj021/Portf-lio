@@ -15,7 +15,7 @@
 
   "home": {
     "titulo": "// Hola, soy",
-    "descricao1": "Desarrollador Full Stack especializado en la creación de aplicaciones modernas, rápidas y escalables.",
+    "descricao1": "Desarrollador Full Stack enfocado en crear aplicaciones [green]modernas y rápidas[/green] y [green]escalables[/green].",
     "button1": "Proyectos",
     "button2": "Acerca"
   },
@@ -55,5 +55,42 @@
   "data": "Base de Datos",
   "others": "Otros",
   "and": "y"
+},
+"terminal": {
+  "welcome": "Bienvenido a mi terminal.",
+  "typeHelp": "Escribe help para ver los comandos.",
+  "whoami": "Desarrollador Full Stack",
+  "skillsTitle": "skills --list",
+ "help": [
+    "Comandos disponibles:",
+    "",
+    "whoami      - quién soy",
+    "about       - abrir la sección Sobre mí",
+    "projects    - abrir la sección Proyectos",
+    "skills      - listar mis habilidades",
+    "contact     - abrir la sección Contacto",
+    "github      - abrir mi perfil de GitHub",
+    "linkedin    - abrir mi perfil de LinkedIn",
+    "clear       - limpiar la terminal"
+],
+  "error": "Comando no encontrado. Escribe help para ver los comandos.",
+  "about": "Abriendo sección sobre mí",
+  "projects": "Abriendo sección de proyectos",
+  "clear": "Limpiar terminal",
+  "contact": "Contactarme"
+},
+"skills":[
+    "HTML",
+    "CSS",
+    "JAVASCRIPT",
+    "REACT",
+    "REACT NATIVE",
+    "NODE.JS",
+    "MYSQL",
+    "GIT"
+]
+
 }
-}
+
+
+

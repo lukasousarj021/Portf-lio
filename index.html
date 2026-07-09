@@ -92,10 +92,16 @@
         <div class="menuMobile flex borderBottom2" id="esconder">
 
             <ul class="listaWeb flex">
-                <li><a href="#home" class="item"><span><i class="bi bi-house" style="padding-right: .2rem;"></i></span>Home</a></li>
-                <li><a href="#about" class="item"><span><i class="bi bi-person" style="padding-right: .3rem;"></i></span><span data-i18n="header.about"></span></a></li>
-                <li><a href="#projects" class="item"><span><i class="bi bi-briefcase" style="padding-right: .3rem;"></i></span><span data-i18n="header.projects"></span></a></li>
-                <li><a href="#contact" class="item"><span><i class="bi bi-envelope" style="padding-right: .3rem;"></i></span><span data-i18n="header.contact"></span></a></li>
+                <li><a href="#home" class="item"><span><i class="bi bi-house"
+                                style="padding-right: .2rem;"></i></span>Home</a></li>
+                <li><a href="#about" class="item"><span><i class="bi bi-person"
+                                style="padding-right: .3rem;"></i></span><span data-i18n="header.about"></span></a></li>
+                <li><a href="#projects" class="item"><span><i class="bi bi-briefcase"
+                                style="padding-right: .3rem;"></i></span><span data-i18n="header.projects"></span></a>
+                </li>
+                <li><a href="#contact" class="item"><span><i class="bi bi-envelope"
+                                style="padding-right: .3rem;"></i></span><span data-i18n="header.contact"></span></a>
+                </li>
             </ul>
 
         </div>
@@ -261,40 +267,46 @@
 
                     <p class="txtAbout"><i class="fa-solid fa-circle fa-2xs"></i> // Sobre mim</p>
 
-                    <p class="saudacao">Olá, eu sou</p>
+                    <p class="saudacao" data-i18n="home.titulo">Olá, eu sou</p>
 
                     <p class="apresentacao">Lukas <span class="green">Dev<span class="piscar">_</span></span></p>
 
-                    <p class="txtPrincipal">Desenvolvedo Full Stack focado em criar aplicações <span class="green">modernas, rápidas</span> e <span class="green">escaláveis.</span></p>
+                    <p class="txtPrincipal" data-i18n="home.descricao1">Desenvolvedo Full Stack focado em criar aplicações <span
+                            class="green">modernas, rápidas</span> e <span class="green">escaláveis.</span></p>
 
                 </div>
-                
-                <div class="constStack">
-                    
-                    <div class="iconStack flex" style="justify-content: space-between;";">
 
-                        <p><i class="fa-solid fa-circle fa-2xs" style="color: #fd3b06;"></i> <i class="fa-solid fa-circle fa-2xs" style="color: rgb(241, 177, 1);"></i> <i class="fa-solid fa-circle fa-2xs" style="color: rgb(1, 250, 1);"></i></p>
+                <div class="constStack">
+
+                    <div class="iconStack flex" style="justify-content: space-between;" ;">
+
+                        <p><i class="fa-solid fa-circle fa-2xs" style="color: #fd3b06;"></i> <i
+                                class="fa-solid fa-circle fa-2xs" style="color: rgb(241, 177, 1);"></i> <i
+                                class="fa-solid fa-circle fa-2xs" style="color: rgb(1, 250, 1);"></i></p>
 
                         <p><i class="fa-regular fa-copy" style="color: var(--cinza); font-size: 1rem;"></i></p>
 
 
                     </div>
-                    
-                    <p><span class="const">> const</span> <span class="txtStack">Stack</span> = <span class="stacks">[ "HTML", "CSS", "JS", "REACT", "NODE.JS" ]</span></p>
+
+                    <p><span class="const">> const</span> <span class="txtStack">Stack</span> = <span class="stacks">[
+                            "HTML", "CSS", "JS", "REACT", "NODE.JS" ]</span></p>
 
                 </div>
 
                 <div class="button">
 
-                    <a href="#projects" ><button class="projetos"> Ver Projetos <span><i class="bi bi-arrow-right"></i></span></button></a>
+                    <a href="#projects"><button class="projetos"> Ver Projetos <span><i
+                                    class="bi bi-arrow-right"></i></span></button></a>
 
-                    <a href="#about" ><button class="sobre"> Sobre mim <span><i class="bi bi-person"></i></span></button></a>
+                    <a href="#about"><button class="sobre"> Sobre mim <span><i
+                                    class="bi bi-person"></i></span></button></a>
 
                 </div>
 
                 <div class="redes flex">
-                    
-                    <a href="http://" class="github"><span ><i class="bi bi-github"></i></span></a>
+
+                    <a href="http://" class="github"><span><i class="bi bi-github"></i></span></a>
 
                     <a href="http://" class="linkedin"><span><i class="bi bi-linkedin"></i></span></a>
 
@@ -304,6 +316,67 @@
 
                 </div>
 
+                <div class="terminal">
+
+                    <!-- Barra Superior -->
+                    <header class="terminal-header">
+
+                        <div class="terminal-buttons">
+                            <i class="bi bi-circle-fill" style="color: #ff5f57;"></i>
+                            <i class="bi bi-circle-fill" style="color: #febc2e;"></i>
+                            <i class="bi bi-circle-fill" style="color: #28c840;"></i>
+                          
+                        </div>
+
+                        <div class="terminal-title">
+                            <i class="bi bi-terminal"></i>
+                            <span>Terminal.dev</span>
+                        </div>
+
+                        <div class="terminal-actions">
+                            <i class="bi bi-dash-lg"></i>
+                            <i class="bi bi-square"></i>
+                            <i class="bi bi-x"></i>
+                        </div>
+
+                    </header>
+
+                    <!-- Corpo -->
+                    <main class="terminal-body" id="terminal-output">
+
+                        <div class="line">
+                            <span class="user">lukas@portfolio</span>
+                            <span class="path">:~$</span>
+                            <span class="command">help</span>
+                        </div>
+
+                        <div class="response">
+                         .<br>
+                            Type <span class="highlight">help</span> to list all commands.
+                        </div>
+
+                    </main>
+
+                    <!-- Input -->
+                    <footer class="terminal-footer">
+
+                        <span class="user">
+                            lukas@portfolio
+                        </span>
+
+                        <span class="path">
+                            :~$
+                        </span>
+
+                         <span class=" cursor piscar"></span>
+                        <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" autofocus>
+                        
+
+                       
+
+                    </footer>
+
+                </div>
 
             </div>
 
@@ -327,6 +400,7 @@
 
     <script src="script/language.js" defer></script>
     <script src="script/script.js" defer></script>
+    <script src="script/terminal.js" defer></script>
 
 </body>
 
