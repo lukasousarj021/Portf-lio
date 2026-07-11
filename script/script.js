@@ -137,6 +137,8 @@ function fecharOutros(atual){
 
 }
 
+
+explorer.classList.add("open")
     
 sections.forEach(section => {
 

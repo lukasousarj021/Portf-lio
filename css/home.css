@@ -10,6 +10,7 @@
     justify-content: center;
 
 
+
 }
 
 .containerMain {
@@ -414,3 +415,48 @@
     }
 
 }
+
+
+@media (min-width: 1024px){
+
+    .containerMain{
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4rem;  
+
+
+        width: calc(100% - 50px);
+        height: 100%;
+
+        margin-left: 55px;
+
+    
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .containerEsquerdo{
+
+        width: 40%;
+        height: 100%;
+
+        line-height: 2rem;
+
+    }
+
+    .txtHome{
+
+    .apresentacao{
+
+            font-size: 4rem;
+
+        }
+
+
+}
+}
+

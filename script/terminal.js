@@ -102,7 +102,14 @@ function execute(command) {
 
         case "skills --list":
 
-            printResponse(traducoesAtuais.terminal.skills);
+            printResponse(`
+
+            <pre class="skills-terminal">
+                ${traducoesAtuais.terminal.skills.join("\n")}
+            </pre>
+            `);
+
+      
 
             break;
 
@@ -245,13 +252,13 @@ window.onload = () => {
 
     output.innerHTML = getInitialContent();
 
-    input.focus();
+    input();
 
 };
 
 document.addEventListener("click", () => {
 
-    input.focus();
+    input();
 
 });
 

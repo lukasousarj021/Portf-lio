@@ -103,6 +103,8 @@ aside{
 
     padding: 1rem 1rem;
 
+    
+
     color: var(--txtPreto);
 
     .seta{
@@ -118,7 +120,9 @@ aside{
     }
 
 
-    .arquivos {
+    .arquivos{
+
+        display: block;
 
         color: var(--cinza);
 
@@ -128,6 +132,7 @@ aside{
         margin-right: 10px;
         font-size: clamp(1rem, 0.5vw, 1.2rem);
 
+            
 
         
     }

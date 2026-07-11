@@ -6,21 +6,6 @@
     box-sizing:border-box;
 }
 
-:root{
-
-    --bg:#0d1117;
-    --terminal:#161b22;
-    --header:#21262d;
-    --border:#30363d;
-
-    --text:#c9d1d9;
-    --greenTerminal:#3fb950;
-    --blue:#58a6ff;
-    --yellow:#f2cc60;
-
-}
-
-
 
 
 /*================ TERMINAL ================*/
@@ -31,7 +16,9 @@
 
     height: 80%;
 
-     margin-top: 2rem;
+    margin-top: 2rem;
+
+
 
     display:flex;
     flex-direction:column;
@@ -189,7 +176,7 @@
 
 .user{
 
-    color:var(--green);
+    color:var(--greenTerminal);
 
     font-weight:600;
 
@@ -205,13 +192,13 @@
 
 .command{
 
-    color:white;
+    color: var(--text);
 
 }
 
 .response{
 
-    color:#c9d1d9;
+    color:var(--text);
 
     margin-bottom:25px;
 
@@ -287,8 +274,22 @@
     font-size: 1rem;
     line-height: 1.8;
 
-    color: #dcdcdc;
+    color: var(--text);
 
     white-space: pre-wrap;
+
+}
+
+
+
+
+@media (min-width: 1024px){
+
+    .terminal{
+
+        width: 40%;
+
+
+    }
 
 }
