@@ -1,13 +1,13 @@
-.home {
-
-    width: 100dvw;
-    height: calc(100dvh - 5rem);
-
-    margin-top: 2rem;
+.Main {
+    
+    width: 100%;
+    min-height: 100dvh;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+
+
 
 
 
@@ -15,10 +15,12 @@
 
 .containerMain {
 
-    width: 90%;
-    height: 95%;
+    background-color: red;
 
-    padding-top: 0.5rem;
+    width: 90%;
+    height: calc(100% - 2rem);
+
+    padding-top: 2rem;
 
     background-color: var(--preto);
 
@@ -26,34 +28,18 @@
 
     color: var(--txtBranco);
 
-}
-
-
-.txtAbout {
-
-    width: 8rem;
-
-    font-size: .9rem;
-
-    padding: .2rem .6rem;
-
-    color: var(--txtGreen);
-
-    background-color: var(--cinzaEscuro3);
-    border: 1px solid var(--border);
-    border-radius: 15px;
+}   
 
 
 
 
-}
 
 .saudacao {
 
     font-size: 1.8rem;
     color: var(--txtCinza);
 
-    padding-top: .5rem;
+    padding-top: 1.5rem;
 
 }
 
@@ -234,7 +220,8 @@
 
     width: 90%;
 
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 
     display: flex;
     align-items: center;
@@ -419,6 +406,15 @@
 
 @media (min-width: 1024px){
 
+    .main{
+
+            width:calc(100% - 55px);
+            
+
+
+    }
+
+
     .containerMain{
 
         display: flex;
@@ -427,10 +423,9 @@
         gap: 4rem;  
 
 
-        width: calc(100% - 50px);
         height: 100%;
 
-        margin-left: 55px;
+
 
     
     }

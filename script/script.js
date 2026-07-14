@@ -161,3 +161,28 @@ sections.forEach(section => {
 });
 
 
+
+
+
+ document.addEventListener("DOMContentLoaded", () => {
+
+    const email = "lukasousa.r.j@gmail.com";
+
+    const emailBtn = document.getElementById("emailBtn");
+
+    console.log(emailBtn); // teste
+
+    emailBtn.addEventListener("click", () => {
+
+        navigator.clipboard.writeText(email)
+            .then(() => {
+                alert("Email copiado!");
+            })
+            .catch(error => {
+                console.log(error);
+                alert("Erro ao copiar.");
+            });
+
+    });
+
+});

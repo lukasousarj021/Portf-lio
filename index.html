@@ -259,68 +259,68 @@
 
     <main>
 
-        <section class="home" id="home">
+        <section class="home Main" id="home">
 
             <div class="containerMain">
 
                 <div class="containerEsquerdo">
 
-                     <div class="txtHome">
+                    <div class="txtHome">
 
-                    <p class="txtAbout"><i class="fa-solid fa-circle fa-2xs"></i> // Sobre mim</p>
+                        <p class="saudacao" data-i18n="home.titulo">Olá, eu sou</p>
 
-                    <p class="saudacao" data-i18n="home.titulo">Olá, eu sou</p>
+                        <p class="apresentacao">Lukas <span class="green">Dev<span class="piscar">_</span></span></p>
 
-                    <p class="apresentacao">Lukas <span class="green">Dev<span class="piscar">_</span></span></p>
-
-                    <p class="txtPrincipal" data-i18n="home.descricao1">Desenvolvedo Full Stack focado em criar aplicações <span
-                            class="green">modernas, rápidas</span> e <span class="green">escaláveis.</span></p>
-
-                </div>
-
-                <div class="constStack">
-
-                    <div class="iconStack flex" style="justify-content: space-between;" ;">
-
-                        <p><i class="fa-solid fa-circle fa-2xs" style="color: #fd3b06;"></i> <i
-                                class="fa-solid fa-circle fa-2xs" style="color: rgb(241, 177, 1);"></i> <i
-                                class="fa-solid fa-circle fa-2xs" style="color: rgb(1, 250, 1);"></i></p>
-
-                        <p><i class="fa-regular fa-copy" style="color: var(--cinza); font-size: 1rem;"></i></p>
-
+                        <p class="txtPrincipal" data-i18n="home.descricao1">Desenvolvedo Full Stack focado em criar
+                            aplicações <span class="green">modernas, rápidas</span> e <span
+                                class="green">escaláveis.</span></p>
 
                     </div>
 
-                    <p><span class="const">> const</span> <span class="txtStack">Stack</span> = <span class="stacks">[
-                            "HTML", "CSS", "JS", "REACT", "NODE.JS" ]</span></p>
+                    <div class="constStack">
+
+                        <div class="iconStack flex" style="justify-content: space-between;" ;">
+
+                            <p><i class="fa-solid fa-circle fa-2xs" style="color: #fd3b06;"></i> <i
+                                    class="fa-solid fa-circle fa-2xs" style="color: rgb(241, 177, 1);"></i> <i
+                                    class="fa-solid fa-circle fa-2xs" style="color: rgb(1, 250, 1);"></i></p>
+
+                            <p><i class="fa-regular fa-copy" style="color: var(--cinza); font-size: 1rem;"></i></p>
+
+
+                        </div>
+
+                        <p><span class="const">> const</span> <span class="txtStack">Stack</span> = <span
+                                class="stacks">[
+                                "HTML", "CSS", "JS", "REACT", "NODE.JS" ]</span></p>
+
+                    </div>
+
+                    <div class="button">
+
+                        <a href="#projects"><button class="projetos"> Ver Projetos <span><i
+                                        class="bi bi-arrow-right"></i></span></button></a>
+
+                        <a href="#about"><button class="sobre"> Sobre mim <span><i
+                                        class="bi bi-person"></i></span></button></a>
+
+                    </div>
+
+                    <div class="redes flex">
+
+                        <a href="http://" class="github"><span><i class="bi bi-github"></i></span></a>
+
+                        <a href="http://" class="linkedin"><span><i class="bi bi-linkedin"></i></span></a>
+
+                        <a href="http://" class="email"><span><i class="bi bi-envelope-fill"></i></span></a>
+
+                        <a href="" class="curriculo"><span><i class="bi bi-download"></i></span></a>
+
+                    </div>
 
                 </div>
 
-                <div class="button">
-
-                    <a href="#projects"><button class="projetos"> Ver Projetos <span><i
-                                    class="bi bi-arrow-right"></i></span></button></a>
-
-                    <a href="#about"><button class="sobre"> Sobre mim <span><i
-                                    class="bi bi-person"></i></span></button></a>
-
-                </div>
-
-                <div class="redes flex">
-
-                    <a href="http://" class="github"><span><i class="bi bi-github"></i></span></a>
-
-                    <a href="http://" class="linkedin"><span><i class="bi bi-linkedin"></i></span></a>
-
-                    <a href="http://" class="email"><span><i class="bi bi-envelope-fill"></i></span></a>
-
-                    <a href="" class="curriculo"><span><i class="bi bi-download"></i></span></a>
-
-                </div>
-
-                </div>
-                
-                  <div class="terminal">
+                <div class="terminal">
 
                     <!-- Barra Superior -->
                     <header class="terminal-header">
@@ -329,7 +329,7 @@
                             <i class="bi bi-circle-fill" style="color: #ff5f57;"></i>
                             <i class="bi bi-circle-fill" style="color: #febc2e;"></i>
                             <i class="bi bi-circle-fill" style="color: #28c840;"></i>
-                          
+
                         </div>
 
                         <div class="terminal-title">
@@ -355,7 +355,7 @@
                         </div>
 
                         <div class="response">
-                         .<br>
+                            .<br>
                             Type <span class="highlight">help</span> to list all commands.
                         </div>
 
@@ -372,25 +372,112 @@
                             :~$
                         </span>
 
-                         <span class=" cursor piscar"></span>
-                        <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" >
-                        
+                        <span class=" cursor piscar"></span>
+                        <input id="terminal-input" type="text" autocomplete="off" spellcheck="false">
 
-                       
+
+
 
                     </footer>
 
                 </div>
 
-               
+
 
             </div>
 
 
         </section>
 
-        <section class="about" id="about">
+        <section class="about Main" id="about">
 
+            <div class="containerMain">
+
+                <div class="containerEsquerdo">
+
+                    <div class="txtabout">
+
+
+                        <p class="txtAbout "><i class="fa-solid fa-circle fa-2xs"></i> // Sobre mim</p>
+
+                        <p class="apresentacao apresentacaoAbout">Desenvolvedor</p>
+                        <p class="green apresentacao">Full stack</p>
+
+
+                        <p class="txtPrincipal txtPrincipalAbout">
+                            Meu nome é Lukas, tenho 24 anos, e sou estudante de <span class="green">Análise e
+                                desenvolvimento de sistemas</span>.
+                            <br><br>
+                            Atuo como <span class="green">desenvolvedor Full stack</span>, com conhecimentos em html,
+                            css, javascript, react, react native, node.js e mySQL.
+
+                        </p>
+
+
+                    </div>
+
+                    <div class="infosAbout flex">
+
+                        <p><i class="bi bi-geo-alt"></i> Rio de Janeiro, Brasil</p>
+                        <p class="icon" id="emailBtn"><span class="spanGreen icon"><i class="bi bi-envelope"></i></span>
+                            lukasousa.r.j@gmail.com</p>
+
+                    </div>
+
+                    <div class="aboutMeJs">
+
+                        <section class="aboutCode">
+
+                            <div class="codeWindow">
+
+                                <div class="codeHeader">
+                                    <span class="fileName">about.me.js</span>
+
+                                    <div class="headerIcons">
+                                        <i class="bi bi-code-slash"></i>
+                                        <i class="bi bi-plus-lg"></i>
+                                    </div>
+                                </div>
+
+                                <pre class="codeContent"><code>
+<span class="lineNumber">1</span>  <span class="keyword">const</span> <span class="variable">Lukas</span> = {
+<span class="lineNumber">2</span>      role: <span class="string">"Full Stack Developer"</span>,
+<span class="lineNumber">3</span>
+<span class="lineNumber">4</span>      age: <span class="number">24</span>,
+<span class="lineNumber">5</span>      location: <span class="string">"Rio de Janeiro, Brasil"</span>,
+<span class="lineNumber">6</span>      status: <span class="string">"Available for new projects"</span>,
+<span class="lineNumber">7</span>
+<span class="lineNumber">8</span>      focus: [
+<span class="lineNumber">9</span>          <span class="string">"Clean Code"</span>,
+<span class="lineNumber">10</span>         <span class="string">"Performance"</span>,
+<span class="lineNumber">11</span>         <span class="string">"Scalability"</span>,
+<span class="lineNumber">12</span>         <span class="string">"Impact"</span>
+<span class="lineNumber">13</span>     ],
+<span class="lineNumber">14</span>
+<span class="lineNumber">15</span>     mindset: {
+<span class="lineNumber">16</span>         alwaysLearning: <span class="boolean">true</span>,
+<span class="lineNumber">17</span>         problemSolver: <span class="boolean">true</span>,
+<span class="lineNumber">18</span>         detailOriented: <span class="boolean">true</span>
+<span class="lineNumber">19</span>     }
+<span class="lineNumber">20</span> }
+
+<span class="comment">// building solutions that make a difference</span>
+        </code></pre>
+
+                            </div>
+
+                        </section>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+                
 
         </section>
 

@@ -256,11 +256,7 @@ window.onload = () => {
 
 };
 
-document.addEventListener("click", () => {
 
-    input();
-
-});
 
 function atualizarTerminal() {
 
